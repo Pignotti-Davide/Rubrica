@@ -1,8 +1,11 @@
 package main.daoImpl;
 
-import javax.persistence.EntityManager;
+
+
+import java.util.List;
 
 import main.dao.ContactDao;
+import main.model.Contact;
 
 public class ContactDaoImpl implements ContactDao{
 	
@@ -20,7 +23,8 @@ public class ContactDaoImpl implements ContactDao{
 	}
 
 	@Override
-	public void getContacts() {
+	public List<Contact> getContacts() {
+		return null;
 		// TODO Auto-generated method stub
 		
 	}
@@ -29,6 +33,11 @@ public class ContactDaoImpl implements ContactDao{
 	public void deleteContact() {
 		// TODO Auto-generated method stub
 		
+	}
+
+	public Contact findById(int parseInt) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
