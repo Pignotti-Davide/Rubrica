@@ -1,9 +1,13 @@
 package main.daoImpl;
 
+import javax.persistence.EntityManager;
+
 import main.dao.ContactDao;
 
 public class ContactDaoImpl implements ContactDao{
+	
 
+	
 	@Override
 	public void saveContact() {
 		// TODO Auto-generated method stub
