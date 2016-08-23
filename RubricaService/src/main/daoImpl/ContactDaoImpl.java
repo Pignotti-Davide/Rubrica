@@ -1,6 +1,6 @@
-package daoImpl;
+package main.daoImpl;
 
-import dao.ContactDao;
+import main.dao.ContactDao;
 
 public class ContactDaoImpl implements ContactDao{
 
