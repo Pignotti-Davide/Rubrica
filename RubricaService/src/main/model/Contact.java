@@ -17,6 +17,8 @@ public class Contact {
 	private int tel;
 	@Column
 	private String email;
+	@Column
+	private String details;
 	
 	public Contact(){}
 
@@ -54,7 +56,14 @@ public class Contact {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getDetails() {
+		return details;
+	}
+
+	public void setDetails(String details) {
+		this.details = details;
 	};
-	
 	
 }
