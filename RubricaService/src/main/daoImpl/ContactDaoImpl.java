@@ -9,8 +9,6 @@ import main.model.Contact;
 
 public class ContactDaoImpl implements ContactDao{
 	
-
-	
 	@Override
 	public void saveContact() {
 		// TODO Auto-generated method stub

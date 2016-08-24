@@ -6,6 +6,10 @@ app.config(function($routeProvider) {
 	    templateUrl : "assets/partials/contacts.html",
 	    controller: "contactsCtrl"
 	  })
+	  .when("/addContact", {
+	    templateUrl : "assets/partials/addContact.html",
+	    controller: "contactsCtrl"
+	  })
 	 
 	});
 

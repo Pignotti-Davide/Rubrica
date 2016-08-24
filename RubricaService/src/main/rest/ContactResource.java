@@ -13,21 +13,21 @@ import javax.ws.rs.core.MediaType;
 import main.daoImpl.ContactDaoImpl;
 import main.model.Contact;
 
-@Path("/employees")
+@Path("/contacts")
 public class ContactResource {
 
 
-	ContactDaoImpl dao = new ContactDaoImpl();
+	ContactDaoImpl daoImpl = new ContactDaoImpl();
 
 	@GET
 	@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
 	public List<Contact> findAll() {
-		return dao.getContacts();
+		return daoImpl.getContacts();
 	}
 
 	@GET @Path("{id}")
 	@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
 	public Contact findById(@PathParam("id") String id) {
-		return dao.findById(Integer.parseInt(id));
+		return daoImpl.findById(Integer.parseInt(id));
 	}
 }

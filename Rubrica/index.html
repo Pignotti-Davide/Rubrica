@@ -7,46 +7,48 @@
 <title>Task manager</title>
 <link rel="stylesheet" href="assets/css/bootstrap.css">
 <link rel="stylesheet" href="assets/css/font-awesome.css">
+<link rel="stylesheet" href="assets/css/index.css">
 <link rel="stylesheet" href="assets/css/contacts.css">
 
 </head>
 <body>
-
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<nav class="navbar">
-					<div class="container-fluid">
-						<div class="navbar-header">
-							<a href="#" class="navbar-brand">Home</a>
-						</div>
-						<ul class="nav navbar-nav navbar-right">
-							<li><button class="btn btn-success" data-toggle="modal" data-target="#addContactModal">
-									<i class="fa fa-user-plus" aria-hidden="true"></i>
-								</button></li>
-						</ul>
+		<nav class="navbar">
+			<div class="container-fluid nav-styled">
+				<div class="navbar-header">
+					<div class="btn-nav">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<i class="fa fa-bars fa-4 white-icon" aria-hidden="true"></i>
+						</button>
 					</div>
-				</nav>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="jumbotron">
-					<h1>Benvenuto!</h1>
-					<h3>Questa è la tua rubrica personale</h3>
+					<a class="navbar-brand white-link" href="#/">
+						<i class="fa fa-book fa-4" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="collapse1">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<div class="btn-nav">
+								<a class="btn btn-success navbar-btn" href="#addContact">
+									<i class="fa fa-user-plus" aria-hidden="true"></i>
+									Aggiungi Contatto
+								</a>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
+		</nav>
+
+		<div class="jumbotron jumbotron-styled">
+			<h1>Benvenuto!</h1>
+			<h3>Questa è la tua rubrica personale</h3>
 		</div>
 
-		
-		<div class="row">
-			<div class="col-md-12">
-				<div ng-view></div>
-			</div>
-		</div>
+		<div ng-view></div>
+
 	</div>
-
-
 
 	<script type="text/javascript" src="assets/js/vendor/jquery-3.1.0.js"></script>
 	<script type="text/javascript" src="assets/js/vendor/jquery-ui.js"></script>

@@ -1,0 +1,24 @@
+
+
+.nav-styled {
+	background-color: teal;
+}
+
+.white-link  {
+	color: white;
+}
+
+.white-link:HOVER {
+	color: white;
+	text-decoration: underline;
+}
+
+.white-icon{
+	color: white;
+}
+
+.jumbotron-styled {
+	background-color: #bcd3d1;
+	color: teal;
+	text-shadow: 2px 2px 6px white;
+}
