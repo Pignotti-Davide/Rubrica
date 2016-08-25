@@ -1,24 +1,43 @@
+@font-face {
+    font-family: allura;
+    src: url("../fonts/Allura-Regular.ttf");
+}
+@font-face {
+    font-family: rothenburg;
+    src: url("../fonts/RothenburgDecorative.ttf");
+}
 
+body.background {
+	background-image: url("../images/paper.jpg");
+}
+
+body.styled {
+	font-family: allura;
+}
 
 .nav-styled {
-	background-color: teal;
+	background-color: rgb(228, 166, 103);
+	
 }
 
-.white-link  {
+.white-link {
 	color: white;
 }
 
-.white-link:HOVER {
+.white:HOVER {
 	color: white;
-	text-decoration: underline;
 }
 
-.white-icon{
+.white-icon {
 	color: white;
 }
 
 .jumbotron-styled {
-	background-color: #bcd3d1;
-	color: teal;
+	background-color: rgba(228, 166, 103,0.5);
+	color : black;
 	text-shadow: 2px 2px 6px white;
+	color: black;
+	font-family: rothenburg;
+	font-stretch: expanded;
+	box-shadow: 2px 2px 5px rgba(204, 0, 0, 0.6);
 }

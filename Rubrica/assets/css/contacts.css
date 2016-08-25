@@ -1,4 +1,23 @@
-.panel-title-shadow{
+.panel-title-styled{
+	font-size:22pt;
 	text-shadow: 2px 2px 5px black;
 }
 
+.panel-styled{
+	background-color: transparent;
+	border-color: rgb(228, 166, 103);
+	box-shadow: 2px 2px 5px rgba(204, 0, 0, 0.6);
+}
+
+.panel-head-styled{
+	background-color: rgba(228, 166, 103,0.5);
+	font-size: 22pt;
+}
+.panel-body-styled{
+	font-size: 22pt;
+}
+
+.panel-foot-styled{
+	background-color: rgba(228, 166, 103,0.5);
+	border-top-color:  rgb(228, 166, 103);
+}

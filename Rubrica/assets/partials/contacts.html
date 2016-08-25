@@ -1,6 +1,26 @@
-<div class="panel panel-primary">
-	<div class="panel-heading text-center panel-title-shadow">
-		<h5>Contatti</h5>
+<div class="panel panel-styled">
+	<div class="panel-heading panel-head-styled">
+		<div class="row">
+			<div class="col-sm-2 text-center">
+				<h4 class="panel-title-styled">Contatti</h4>
+			</div>
+			<div class="col-sm-10 text-right">
+				<form class="form-inline hidden-xs">
+					<div class="form-group">
+					<label><i class="fa fa-search fa-4 white-icon" aria-hidden="true"></i></label>
+						<input class="form-control" placeholder="cerca...">
+					</div>
+					<div class="form-group">
+						<label>Cerca per:</label> <select class="form-control">
+							<option>Nome</option>
+							<option>Telefono</option>
+							<option>Email</option>
+							<option>Testo dettagli</option>
+						</select>
+					</div>
+				</form>
+			</div>
+		</div>
 	</div>
 	<table ng-repeat="contact in contacts">
 		<thead>
@@ -38,16 +58,13 @@
 				</div>
 				<div class="modal-body">
 					<div class="form-group">
-						<label>Nome</label>
-						<input ng-model="contacts[activeContact].name">
+						<label>Nome</label> <input ng-model="contacts[activeContact].name">
 					</div>
 					<div class="form-group">
-						<label>Telefono</label>
-						<input ng-model="contacts[activeContact].tel">
+						<label>Telefono</label> <input ng-model="contacts[activeContact].tel">
 					</div>
 					<div class="form-group">
-						<label>Email</label>
-						<input ng-model="contacts[activeContact].email">
+						<label>Email</label> <input ng-model="contacts[activeContact].email">
 					</div>
 				</div>
 				<div class="modal-footer">

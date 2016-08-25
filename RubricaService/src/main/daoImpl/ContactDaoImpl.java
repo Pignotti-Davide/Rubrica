@@ -10,7 +10,6 @@ import org.hibernate.Transaction;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 
-
 import main.dao.ContactDao;
 import main.model.Contact;
 
