@@ -1,21 +1,23 @@
 var app = angular.module("myApp");
 var indexCtrl=app.controller("indexCtrl", function($scope){
 	
-	$scope.adapt=function(){
-		$("#flipbook").css({
-			width: 2*$("#flipbook").parent().width(),
-			left: "-"+$('#flipbook').width()/2+"px",
-		});
-	}
-
 });
 
+function adapt(){
+	console.log("adapt hit");
+	$("#flipbook").css({
+		width: 2*$("#container").width(),
+		left: "-"+$('#container').width()+"px",
+	});
+}
+
 $("#flipbook").turn({
-	width: 2*$("#flipbook").parent().width(),
+	width: 2*$("#container").width(),
+	height: 1000,
 	autoCenter: false
 });
 $("#flipbook").css({
-	left: "-"+$('#flipbook').width()/2+"px"
+	left: "-"+$('#container').width()+"px"
 });
 
 
