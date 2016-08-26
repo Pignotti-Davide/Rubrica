@@ -16,6 +16,11 @@ body.styled {
 	font-family: allura;
 }
 
+div.front-background {
+	background-image: url("../images/Parrot.jpg");
+	background-size: cover;
+}
+
 .nav-styled {
 	background-color: rgb(228, 166, 103);
 }
@@ -85,5 +90,10 @@ select.form-control {
 .panel-foot-styled {
 	background-color: rgba(228, 166, 103, 0.5);
 	border-top-color: rgb(228, 166, 103);
+}
+
+.positioned {
+	position: absolute;
+	left:100;
 }
 }
