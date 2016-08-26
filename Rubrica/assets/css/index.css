@@ -1,10 +1,11 @@
 @font-face {
-    font-family: allura;
-    src: url("../fonts/Allura-Regular.ttf");
+	font-family: allura;
+	src: url("../fonts/Allura-Regular.ttf");
 }
+
 @font-face {
-    font-family: rothenburg;
-    src: url("../fonts/RothenburgDecorative.ttf");
+	font-family: rothenburg;
+	src: url("../fonts/RothenburgDecorative.ttf");
 }
 
 body.background {
@@ -17,27 +18,50 @@ body.styled {
 
 .nav-styled {
 	background-color: rgb(228, 166, 103);
-	
 }
 
-.white-link {
-	color: white;
+.link-styled:HOVER, .link-styled:LINK, .link-styled:VISITED,
+	.link-styled:ACTIVE {
+	color: black;
+	font-size: 24px;
 }
 
-.white:HOVER {
-	color: white;
-}
-
-.white-icon {
-	color: white;
+.icon-styled {
+	color: black;
 }
 
 .jumbotron-styled {
-	background-color: rgba(228, 166, 103,0.5);
-	color : black;
+	background-color: rgba(228, 166, 103, 0.5);
+	color: black;
 	text-shadow: 2px 2px 6px white;
 	color: black;
 	font-family: rothenburg;
 	font-stretch: expanded;
 	box-shadow: 2px 2px 5px rgba(204, 0, 0, 0.6);
+}
+
+label {
+	font-size: 20px;
+}
+
+input.form-control, input::-webkit-input-placeholder {
+	font-size: 20px;
+	line-height: 2;
+}
+
+select.form-control {
+	font-size: 20px;
+}
+
+.btn-styled {
+	font-size: 20px;
+	color: black;
+	background-color: #f0ad4e;
+	border-color: #eea236;
+}
+
+.navbar-toggle {
+	color: black;
+	font-size: 24px;
+}
 }

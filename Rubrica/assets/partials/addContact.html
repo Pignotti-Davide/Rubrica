@@ -1,51 +1,49 @@
 <div class="panel panel-styled">
-	<div class="panel-heading text-center panel-head-styled">
-		Aggiungi un nuovo contatto
-	</div>
+	<div class="panel-heading text-center panel-head-styled">Aggiungi un nuovo contatto</div>
 	<form>
 		<div class="panel-body panel-body-styled">
-				<div class="form-group">
-					<div class="row">
-						<div class="col-md-2">
-							<label>Nome:</label>
-						</div>
-						<div class="col-md-10">
-							<input class="form-control" ng-model="newContact.name">
-						</div>
-					</div>
-				</div>
-				<div class="form-group">
-					<div class="row">
-						<div class="col-md-2">
-							<label>Telefono:</label>
-						</div>
-						<div class="col-md-10">
-							<input class="form-control" ng-model="newContact.tel">
-						</div>
-					</div>
-				</div>
-				<div class="form-group">
-					<div class="row">
-						<div class="col-md-2">
-							<label>Email:</label>
-						</div>
-						<div class="col-md-10">
-							<input class="form-control" ng-model="newContact.email">
-						</div>
-					</div>
-				</div>
+			<div class="form-group">
 				<div class="row">
-					<div class="col-md-12">
-						<label><button class="btn btn-info" data-toggle="collapse" data-target="#collapseDetails" aria-expanded="false" aria-controls="collapseExample">Aggiungi
-							Dettagli:</button></label>
+					<div class="col-md-2">
+						<label>Nome:</label>
+					</div>
+					<div class="col-md-10">
+						<input class="form-control" ng-model="newContact.name">
 					</div>
 				</div>
-				<div class="collapse" id="collapseDetails">
-					<textarea class="form-control" rows="3" ng-model="newContact.details"></textarea>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-2">
+						<label>Telefono:</label>
+					</div>
+					<div class="col-md-10">
+						<input class="form-control" ng-model="newContact.tel">
+					</div>
 				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-2">
+						<label>Email:</label>
+					</div>
+					<div class="col-md-10">
+						<input class="form-control" ng-model="newContact.email">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<label><button class="btn btn-styled" data-toggle="collapse" data-target="#collapseDetails" aria-expanded="false"
+							aria-controls="collapseExample">Aggiungi Dettagli:</button></label>
+				</div>
+			</div>
+			<div class="collapse" id="collapseDetails">
+				<textarea class="form-control" rows="3" ng-model="newContact.details"></textarea>
+			</div>
 		</div>
 		<div class="panel-footer panel-foot-styled text-center">
-			<button class="btn btn-primary" ng-click="saveContact()">Salva Contatto</button>
+			<button class="btn btn-styled" ng-click="saveContact()">Salva Contatto</button>
 		</div>
 	</form>
 </div>

@@ -1,23 +1,25 @@
-.panel-title-styled{
-	font-size:22pt;
+.panel-title-styled {
+	font-size: 23px;
 	text-shadow: 2px 2px 5px black;
 }
 
-.panel-styled{
-	background-color: transparent;
+.panel-styled {
+	background-color: rgba(228, 166, 103, 0.2);
 	border-color: rgb(228, 166, 103);
 	box-shadow: 2px 2px 5px rgba(204, 0, 0, 0.6);
 }
 
-.panel-head-styled{
-	background-color: rgba(228, 166, 103,0.5);
-	font-size: 22pt;
-}
-.panel-body-styled{
-	font-size: 22pt;
+.panel-head-styled {
+	background-color: rgba(228, 166, 103, 0.5);
+	font-size: 23px;
 }
 
-.panel-foot-styled{
-	background-color: rgba(228, 166, 103,0.5);
-	border-top-color:  rgb(228, 166, 103);
+.panel-body-styled {
+	font-size: 20px;
+	back
+}
+
+.panel-foot-styled {
+	background-color: rgba(228, 166, 103, 0.5);
+	border-top-color: rgb(228, 166, 103);
 }
