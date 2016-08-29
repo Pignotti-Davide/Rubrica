@@ -15,8 +15,7 @@ var contactsCtrl=app.controller("contactsCtrl", function($scope, contactsService
 	};
 	
 	$scope.saveContact=function(){
-		var url = "http://localhost:8080/RubricaService/rest/contacts/addContact";
 		var jsonToPersist = angular.toJson($scope.newContact);
-		$.post(url,jsonToPersist);
+		contactsService.saveContact(jsonToPersist);
 	}
 });
